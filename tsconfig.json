@@ -10,6 +10,8 @@
     },
     "files": [
         "hello.ts",
-        "2-union-type.ts"
+        "2-union-type.ts",
+        "3-narrowing.ts",
+        "4-functions.ts",
     ]
 }

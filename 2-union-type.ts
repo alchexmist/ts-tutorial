@@ -17,3 +17,12 @@ function welcome(id: string|string[]|number) {
 
 welcome(666);
 welcome(['Jack', 'The Ripper']);
+
+// Alias
+type ID = string|number;
+function echoID(id:ID) {
+    console.log(`Echo: ${id}`);
+};
+
+echoID(9876);
+
