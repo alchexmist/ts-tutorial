@@ -9,6 +9,7 @@
         "noImplicitOverride": true,
     },
     "files": [
-        "hello.ts"
+        "hello.ts",
+        "2-union-type.ts"
     ]
 }

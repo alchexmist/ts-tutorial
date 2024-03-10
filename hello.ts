@@ -18,3 +18,9 @@ double(3.14);
 let obj: any = { name: "albert" };
 console.log(obj.name);
 console.log(obj.surname);
+
+function getFavoriteNumber():number {
+    return Math.random();
+}
+
+console.log(`My favorite number is ${getFavoriteNumber()}`);
