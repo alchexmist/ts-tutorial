@@ -57,3 +57,20 @@ interface NumberOrStringDictionary {
 const myArray1:NumberOrStringDictionary = [1, 2, 4];
 myArray1.name = "Mis números";
 console.log(`${myArray1.name} length: ${myArray1.length}`);
+
+// Extending Types.
+interface BasicName {
+    firstName: string;
+}
+interface FullName extends BasicName {
+    lastName: string;
+}
+////
+interface  Colorful {
+    color: string;
+}
+interface Circle {
+    radius: number;
+}
+interface ColorfulCircle extends Colorful, Circle{}
+
