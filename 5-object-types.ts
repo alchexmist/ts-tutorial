@@ -72,5 +72,19 @@ interface  Colorful {
 interface Circle {
     radius: number;
 }
-interface ColorfulCircle extends Colorful, Circle{}
+
+// Union types.
+type ColorfulCircle2 = Colorful&Circle;
+
+// Generic object types
+interface Box<Type> {
+    contents: Type;
+}
+let box: Box<string>;
+
+interface ArrayCustomizedType<Type> {
+    lenght: number;
+    pop():Type|undefined;
+    push(...items: Type[]):number;
+}
 
