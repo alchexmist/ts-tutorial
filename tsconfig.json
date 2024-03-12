@@ -13,5 +13,6 @@
         "2-union-type.ts",
         "3-narrowing.ts",
         "4-functions.ts",
+        "5-object-types.ts",
     ]
 }
