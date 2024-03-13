@@ -88,3 +88,17 @@ interface ArrayCustomizedType<Type> {
     push(...items: Type[]):number;
 }
 
+// Tipo ReadonlyArray: describe arrays que no deben ser modificados.
+// No tiene constructor. Se asignan arrays regulares a ReadonlyArray.
+const roArray: ReadonlyArray<number> = [1, 2, 3];
+
+// Tuples
+type StringNumberTuple = [string, number];
+
+function printStringNumberTuple(t: StringNumberTuple) {
+    const [name, id] = t;
+    console.log(`(${name}, ${id})`);
+}
+
+let myTuple:StringNumberTuple = ["alchexmist", 1];
+printStringNumberTuple(myTuple);
